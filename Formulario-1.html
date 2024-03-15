@@ -12,17 +12,17 @@
         <h1>Formulario de registro</h1>
         <form action="" method="get">
             <p>Número de socio: <input type="number" name="numerosocio" value="1" readonly></p>
-            <p>NIF: <input type="text" name="nif"></p>
-            <p>Nombre: <input type="text" name="nombre" ></p>
-            <p>Apellidos: <input type="text" name="Apellidos"></p>
+            <p>NIF: <input type="text" name="nif" required></p>
+            <p>Nombre: <input type="text" name="nombre" required></p>
+            <p>Apellidos: <input type="text" name="Apellidos" required></p>
             <h2>Dirección:</h2>
             <p>Tipo de vía: <input type="text" name="tipodevia"></p>
-            <p>Nombre de la calle: <input type="text" name="nombrecalle"></p>
-            <p>Número vivienda: <input type="text" name="numerovivienda"></p>
+            <p>Nombre de la calle: <input type="text" name="nombrecalle" required></p>
+            <p>Número vivienda: <input type="text" name="numerovivienda" required></p>
             <p>Piso: <input type="text" name="piso"></p>
-            <p>Código Postal: <input type="number" name="codigopostal"></p>
-            <p>Municipio: <input type="text" name="municipio"></p>
-            <p>Provincia: <select required name="provincia" class="form-control">
+            <p>Código Postal: <input type="number" name="codigopostal" required></p>
+            <p>Municipio: <input type="text" name="municipio" required></p>
+            <p>Provincia: <select required name="provincia" required class="form-control">
                 <option value="">Elige Provincia</option>
                 <option value="Álava/Araba">Álava/Araba</option>
                 <option value="Albacete">Albacete</option>
@@ -78,7 +78,7 @@
                 <option value="Zaragoza">Zaragoza</option>
               </select></p>
               <br>
-            <p>Teléfono: <input type="tel" name="telefono" ></p>
+            <p>Teléfono: <input type="tel" name="telefono" required></p>
             <p>Correo Electronico: <input type="email" name="correo electronico" maxlength="100"></p>
             
             <p>
