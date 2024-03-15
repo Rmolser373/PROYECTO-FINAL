@@ -1,31 +1,31 @@
 body {
-    background-color: #81BEF7;
+    background-color:rgb(128, 235, 21);
 }
 
 h1 {
-    background-color: #5882FA;
-    color: #0431B4;
+    color: #bd2a2a;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    size: 180%;
+    size: 150%;
     text-align: center;
-    text-decoration: overline underline;
+    text-decoration: underline;
 }
-
+.parrafo1 {
+    text-align: center;
+}
 h2 {
-    background-color:#5882FA;
-    color: #08088A;
+    color: #bd2a2a;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
-    size:150%;
-    text-align: right;
+    size:120%;
+    text-align: center;
     text-decoration: underline;
 }
 
 p {
 
     font-family: 'Times New Roman', Times, serif;
-    color: #08088A;
+    color: #bd2a2a;
     size: 100%;
     text-align: justify;
     text-indent: 15px;
@@ -33,25 +33,15 @@ p {
 
 ul {
 
-    color:#08088A;
+    color:rgb(165, 82, 23);
     font-family: 'Times New Roman', Times, serif;
     list-style-image: url("Lista.png");
 }
 
 table {
-    
+
+    size: 100%;
+    text-indent: 15px;
+    color: rgb(165, 82, 23);
+    border:10px;
 }
-
-/*
-
-color: ;
-background-color: ;
-font-family: ;
-font-weight: ;
-font-size: ;
-text-decoration-line: ;
-text-align: justify;
-font-style: ;
-border: 15px;
-
-    list-style-image: url(Lista.png);
