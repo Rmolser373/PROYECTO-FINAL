@@ -1,0 +1,44 @@
+<html>
+   <head>
+       <meta charset="utf-8" />
+       <title>Segundo Formulario</title>
+       <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <!-- Segundo formulario: -->
+
+
+      <h1>Segundo Formulario Cooperativa</h1>
+      <form action = "/my-handling-form-page" method="get">
+      <label for = "number"> Número de entrega  </label>
+      <input type="name" name="número" value="Número de entrega"class="form-input" readonly value="1" required maxlength="30"/>
+      <br><br><br>
+      <label for = "datetime"> Fecha y hora: </label>
+      <input type = "datetime-local" id = "datetime" name = "datetime" ></input>
+      <br><br><br>
+      <label for = "num"> Número de socio:</label>
+      <input type = "number" id = "num" name = "num" ></input>
+      <br><br><br>
+      <label for = "tlf"> Teléfono: </label>
+      <input type = "tel" id = "tlf" name = "tlf" maxlength ="9" ></input>
+      <br><br><br>
+      <label for = "cant"> Cantidad de aceituna (kg):</label>
+      <input type = "number" id = "number" name = "number" ></input>
+      <br><br><br>
+      <label for = "tipo de aceituna"> Localidad: </label>
+      <select id = "tipo aceituna" name = "tipo aceituna">
+           <option value = "árbol"> árbol </option>
+           <option value = "suelo"> suelo </option>
+      </select>
+      <br><br><br>
+      <label for = "parcela"> Parcela SIGPAC </label>
+      <input type = "number" id = "number" name = "number" ></input>
+      <br><br><br>
+      <label for = "recinto"> Recinto SIGPAC </label>
+      <input type = "number" id = "number" name = "number" ></input>
+      <br><br><br>
+      <label for = "sender"> Enviar </label>
+      <input type = "submit" id = "sender" name = "sender" ></input>
+      </form>
+   </body>
+</html>
