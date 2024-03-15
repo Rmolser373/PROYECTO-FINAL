@@ -1,38 +1,51 @@
 body {
-    background-color:coral;
+    background-color:#a5aa5c;
 }
 
 h1 {
-    background-color:cornsilk;
-    color: #bd2a2a;
+    color: #7e4a2e;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     size: 150%;
     text-align: center;
     text-decoration: underline;
 }
-
+.parrafo1 {
+    text-align: center;
+}
 h2 {
-    background-color:#5882FA;
-    color: #ca29cf;
+    color: #7e4a2e;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     size:120%;
-    text-align: left;
+    text-align: center;
+    text-decoration: underline;
+    text-indent:20px;
 }
 
 p {
 
     font-family: 'Times New Roman', Times, serif;
-    color: #1fc527;
+    color: #141211;
     size: 100%;
     text-align: justify;
     text-indent: 15px;
+    font-weight: bold;
+}
+
+label {
+
+    font-family: 'Times New Roman', Times, serif;
+    color: #141211;
+    size: 100%;
+    text-align: justify;
+    text-indent: 15px;
+    font-weight: bold;
 }
 
 ul {
 
-    color:#08088A;
+    color:#9b532c;
     font-family: 'Times New Roman', Times, serif;
     list-style-image: url("Lista.png");
 }
@@ -41,6 +54,6 @@ table {
 
     size: 100%;
     text-indent: 15px;
-    color: #08088A;
+    color:#141211;
     border:10px;
 }
