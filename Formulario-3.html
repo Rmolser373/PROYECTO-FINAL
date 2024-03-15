@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>COOP_Chocas: Venta de aceite</title>
+       <!-- <form action="/my-handling-form-page" method="get"></form> -->
+   </head>
+
+
+   <body>
+       <h1>Cooperativa Chocas Jaén</h1>
+       <p>¡Hola! Somos la Cooperativa Chocas Jaén y Nicolás González Férnandez es nuestro mayor enemigo, nuestro único objetivo es destruir su cooperativa</p>
+       <p>
+           <label for="Nfac">Num Factura:</label>
+           <input type="number" id="Nfac" name="Nfac" class="form-input" readonly required/>
+       </p>
+       <p>
+           <label for="dattie">Fecha y hora:</label>
+           <input type="datetime-local" id="dattie" name="dattie" required/>
+       </p>
+       <p>
+           <label for="Nsoc">Número de socio:</label>
+           <input type="number" id="Nsoc" name="Nsoc" required/>
+       </p>
+       <table border="1">
+           <tr><th>Producto</th><th>Cantidad</th><th>Precio/litro</th><th>Subtotal</th></tr>
+           <tr>
+               <td><select id="ace1" name="ace1">
+                   <option value="VE">Virgen extra</option>
+                   <option value="V">Virgen</option>
+                   <option value="CT">Cosecha temprana</option>
+                   <option value="E">Ecológico</option></select>
+               </td>
+               <td><input type="number" id="can1" name="can1" /></td>
+               <td><input type="number" id="prel1" name="prel1" /></td>
+               <td><input type="number" id="sub1" name="sub1" /></td>
+           </tr>
+           <tr>
+               <td><select id="ace2" name="ace2">
+                    <option value="N">-</option>
+                    <option value="VE">Virgen extra</option>
+                    <option value="V">Virgen</option>
+                    <option value="CT">Cosecha temprana</option>
+                    <option value="E">Ecológico</option></select>
+               </td>
+               <td><input type="number" id="can2" name="can2" /></td>
+               <td><input type="number" id="prel2" name="prel2" /></td>
+               <td><input type="number" id="sub2" name="sub2" /></td>
+           </tr>
+           <tr>
+               <td><select id="ace3" name="ace3">
+                    <option value="N">-</option>
+                    <option value="VE">Virgen extra</option>
+                    <option value="V">Virgen</option>
+                    <option value="CT">Cosecha temprana</option>
+                    <option value="E">Ecológico</option></select>
+               </td>
+               <td><input type="number" id="can3" name="can3" /></td>
+               <td><input type="number" id="prel3" name="prel3" /></td>
+               <td><input type="number" id="sub3" name="sub3" /></td>
+           </tr>
+           <tr>
+                <td></td>
+                <td></td>
+                <td><label for="total">Total:</label></td>
+                <td><input type="number" id="total" name="total" /></td>
+            </tr>
+
+
+       </table>
+   </body>
+</html>
