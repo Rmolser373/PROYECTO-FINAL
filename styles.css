@@ -1,3 +1,47 @@
+body {
+    background-color: #81BEF7;
+}
+
+h1 {
+    background-color: #5882FA;
+    color: #0431B4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 180%;
+    text-align: center;
+    text-decoration: overline underline;
+}
+
+h2 {
+    background-color:#5882FA;
+    color: #08088A;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    size:150%;
+    text-align: right;
+    text-decoration: underline;
+}
+
+p {
+
+    font-family: 'Times New Roman', Times, serif;
+    color: #08088A;
+    size: 100%;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+ul {
+
+    color:#08088A;
+    font-family: 'Times New Roman', Times, serif;
+    list-style-image: url("Lista.png");
+}
+
+table {
+    
+}
+
 /*
 
 color: ;
@@ -10,22 +54,4 @@ text-align: justify;
 font-style: ;
 border: 15px;
 
-body{
-
-}
-h1{
-
-}
-h2{
-
-}
-li{
     list-style-image: url(Lista.png);
-}
-p{
-
-}
-table{
-    
-}
-*/
