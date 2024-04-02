@@ -50,10 +50,10 @@
             <p>Primer apellido: <input type="text" name="Apellido1" id="Apellido1" maxlength="30" required></p>
             <p>Segundo apellido: <input type="text" name="Apellido2" id="Apellido2" maxlength="30" ></p>
             <h2>Dirección:</h2>
-            <p>Tipo de vía: <input type="text" name="tipodevia" id="tipodevia"></p>
-            <p>Nombre de la calle: <input type="text" name="nombrecalle" id="nombrecalle" required></p>
-            <p>Número vivienda: <input type="text" name="numerovivienda" id="numerovivienda" required></p>
-            <p>Piso: <input type="text" name="piso" id="piso"></p>
+            <p>Tipo de vía: <input type="text" name="tipodevia" id="tipodevia" maxlength="30"></p>
+            <p>Nombre de la calle: <input type="text" name="nombrecalle" id="nombrecalle" maxlength="60" required></p>
+            <p>Número vivienda: <input type="text" name="numerovivienda" id="numerovivienda" maxlength="10" required></p>
+            <p>Piso: <input type="text" name="piso" id="piso" maxlength="30"></p>
             <p>Código Postal: <input type="number" name="codigopostal" id="codigopostal" maxlength="5" required></p>
             <p>Municipio: <input type="text" name="municipio" id="municipio" maxlength="50" required></p>
             <p>Provincia: <select required name="provincia" id="provincia" required class="form-control">
@@ -111,7 +111,7 @@
                 <option value="Zamora">Zamora</option>
                 <option value="Zaragoza">Zaragoza</option>
               </select></p>
-            <p>Teléfono: <input type="tel" name="telefono" id="telefono" required></p>
+            <p>Teléfono: <input type="tel" name="telefono" id="telefono" maxlength="9" required></p>
             <p>Correo Electronico: <input type="email" name="correo electronico" id="correo electronico" maxlength="100"></p>
             
             <p>
