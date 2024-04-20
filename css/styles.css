@@ -57,3 +57,29 @@ table {
     color:#141211;
     border:10px;
 }
+
+input {
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+input:valid {
+    border-color: green;
+}
+  
+  input:invalid {
+    border-color: red;
+}
+  
+input:optional {
+    border-color: gray;
+}
+
+input:focus:valid {
+    background-color: lightgreen;
+}
+  
+input:focus:invalid {
+    background-color: lightsalmon;
+}

@@ -18,25 +18,6 @@
                     <a class="navbar-brand" href="Formulario-1.html">Registro de socios</a>
                     <a class="navbar-brand" href="Formulario-2.html">Entrega de aceituna</a>
                     <a class="navbar-brand" href="#">Comprar aceite</a>
-                    <!--
-                        <div class="collapse navbar-collapse nav-" id="navbarSupportedContent" >
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Formularios
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="Formulario-1.html">Registro de socios</a></li>
-                          <li><a class="dropdown-item" href="Formulario-2.html">Entrega de aceituna</a></li>
-                          <li><a class="dropdown-item" href="Formulario-3.html">Venta de aceite</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Búsqueda</button>
-                    </form>
-                  </div>-->
                 </div>
               </nav>
             </div>
@@ -52,20 +33,20 @@
        </p>
        <p>
            <label for="Nsoc">Número de socio:</label>
-           <input type="number" id="Nsoc" name="Nsoc" required/>
+           <input type="number" id="Nsoc" name="Nsoc" min="1" max="999999" placeholder="*" required/>
        </p>
-       <table border="1">
+       <table>
            <tr><th>Producto</th><th>Cantidad</th><th>Precio/litro</th><th>Subtotal</th></tr>
            <tr>
-               <td><select id="ace1" name="ace1">
+               <td><select id="ace1" name="ace1" required>
                    <option value="VE">Virgen extra</option>
                    <option value="V">Virgen</option>
                    <option value="CT">Cosecha temprana</option>
                    <option value="E">Ecológico</option></select>
                </td>
-               <td><input type="number" id="can1" name="can1" /></td>
-               <td><input type="number" id="prel1" name="prel1" /></td>
-               <td><input type="number" id="sub1" name="sub1" /></td>
+               <td><input type="number" id="can1" name="can1" min="0.1" step="0.1" maxlength="5" placeholder="*" required/></td>
+               <td><input type="number" id="prel1" name="prel1" min="0.1" step="0.1" maxlength="5" placeholder="*" required/></td>
+               <td><input type="number" id="sub1" name="sub1" min="0.1" step="0.1" maxlength="5" placeholder="*" required/></td>
            </tr>
            <tr>
                <td><select id="ace2" name="ace2">
@@ -75,9 +56,9 @@
                     <option value="CT">Cosecha temprana</option>
                     <option value="E">Ecológico</option></select>
                </td>
-               <td><input type="number" id="can2" name="can2" /></td>
-               <td><input type="number" id="prel2" name="prel2" /></td>
-               <td><input type="number" id="sub2" name="sub2" /></td>
+               <td><input type="number" id="can2" name="can2" min="0" maxlength="5"/></td>
+               <td><input type="number" id="prel2" name="prel2" min="0" maxlength="5"/></td>
+               <td><input type="number" id="sub2" name="sub2" min="0" maxlength="5"/></td>
            </tr>
            <tr>
                <td><select id="ace3" name="ace3">
@@ -87,15 +68,15 @@
                     <option value="CT">Cosecha temprana</option>
                     <option value="E">Ecológico</option></select>
                </td>
-               <td><input type="number" id="can3" name="can3" /></td>
-               <td><input type="number" id="prel3" name="prel3" /></td>
-               <td><input type="number" id="sub3" name="sub3" /></td>
+               <td><input type="number" id="can3" name="can3" min="0" maxlength="5"/></td>
+               <td><input type="number" id="prel3" name="prel3" min="0" maxlength="5"/></td>
+               <td><input type="number" id="sub3" name="sub3" min="0" maxlength="5"/></td>
            </tr>
            <tr>
                 <td></td>
                 <td></td>
                 <td><label for="total">Total:</label></td>
-                <td><input type="number" id="total" name="total" /></td>
+                <td><input type="number" id="total" name="total" min="0" maxlength="6"/></td>
             </tr>
        </table>
         <p>
