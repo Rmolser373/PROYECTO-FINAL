@@ -54,7 +54,7 @@
             <p>Nombre de la calle: <input type="text" name="nombrecalle" id="nombrecalle" maxlength="60" required></p>
             <p>Número vivienda: <input type="text" name="numerovivienda" id="numerovivienda" maxlength="10" required></p>
             <p>Piso: <input type="text" name="piso" id="piso" maxlength="30"></p>
-            <p>Código Postal: <input type="number" name="codigopostal" id="codigopostal" maxlength="5" required></p>
+            <p>Código Postal: <input type="number" name="codigopostal" id="codigopostal" pattern="[0-9]{5}" required></p>
             <p>Municipio: <input type="text" name="municipio" id="municipio" maxlength="50" required></p>
             <p>Provincia: <select required name="provincia" id="provincia" required class="form-control">
                 <option value="">Elige Provincia</option>
