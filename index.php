@@ -1,5 +1,5 @@
 <?php
-    <?php
+    
    
    $nombreServidor = "localhost";
    $baseDatos = "cooperativa_chocas";
