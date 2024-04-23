@@ -34,7 +34,7 @@ CREATE TABLE Entrega_aceituna(
 
 
 CREATE TABLE Producto (
- Cod_Prod varchar(4) PRIMARY KEY,
+ Cod_Producto varchar(4) PRIMARY KEY,
  Denominación enum('Aceite de oliva virgen extra','Aceite de oliva virgen','Aceite de orujo','Hueso de aceituna') NOT NULL,
  Precio float NOT NULL, -- Es un float porque el precio no tiene por qué ser entero, además, el precio de nuestros productos siempre corresponde al litro o kilo, (depende de si hablamos de sólido o líquido)
  CONSTRAINT Producto_Precio_ck CHECK(precio>0)
@@ -56,15 +56,15 @@ CREATE TABLE Ventas (
 
 CREATE TABLE Producto_Ventas(
  Num_Factura integer,
- Cod_Prod varchar(4),
+ Cod_Producto varchar(4),
  Cantidad integer NOT NULL,
- CONSTRAINT Producto_Ventas_pk PRIMARY KEY(Num_Factura, Cod_Prod),
+ CONSTRAINT Producto_Ventas_pk PRIMARY KEY(Num_Factura, Cod_Producto),
  CONSTRAINT Producto_Ventas_NF_fk FOREIGN KEY(Num_Factura)
                              	REFERENCES Ventas(Num_Factura)
                              	ON UPDATE CASCADE
                              	ON DELETE NO ACTION,
- CONSTRAINT Producto_Ventas_CP_fk FOREIGN KEY(Cod_Prod)
-                             	REFERENCES Producto(Cod_Prod)
+ CONSTRAINT Producto_Ventas_CP_fk FOREIGN KEY(Cod_Producto)
+                             	REFERENCES Producto(Cod_Producto)
                              	ON UPDATE CASCADE
                              	ON DELETE NO ACTION
 );
@@ -95,4 +95,4 @@ INSERT INTO Ventas VALUES ('12908456J','0278', '2024-03-22 11:08:34');
 SELECT * FROM Socios;
 SELECT * FROM Entrega_aceituna;
 SELECT * FROM Ventas;
-SELECT precio FROM Producto where Cod_Prod='0012';
+SELECT precio FROM Producto where Cod_Producto='0012';
