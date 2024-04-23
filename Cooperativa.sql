@@ -1,4 +1,8 @@
 -- create
+DROP DATABASE IF EXISTS BaseChocas;
+CREATE DATABASE BaseChocas;
+use BaseChocas;
+
 CREATE TABLE Socios (
  NIF_Socio varchar(9) PRIMARY KEY,
  Nombre varchar(20) NOT NULL,
