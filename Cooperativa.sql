@@ -75,9 +75,9 @@ CREATE TABLE Producto_Ventas(
 
 
 -- insert
-INSERT INTO Socios VALUES ('12345678V', 'José', 'Rodriguez', 'Fernández', 'Avenida de Madrid 16','23001','Jaén','Jaén','659623343','jrodfer@hotmail.com');
-INSERT INTO Socios VALUES ('49826745H', 'Álvaro', 'Sanchez', 'Alhambra', 'Camino de las cruces 19', '23009','Jaén','Jaén','692098867','asanalh@gmail.com');
-INSERT INTO Socios VALUES ('12908456J', 'Manuel', 'Molina', 'González', 'Arquitecto Berges 3', '23003','Jaén','Jaén','682343341','mmolgol@gmail.com');
+-- INSERT INTO Socios VALUES ('12345678V', 'José', 'Rodriguez', 'Fernández', 'Avenida de Madrid 16','23001','Jaén','Jaén','659623343','jrodfer@hotmail.com');
+-- INSERT INTO Socios VALUES ('49826745H', 'Álvaro', 'Sanchez', 'Alhambra', 'Camino de las cruces 19', '23009','Jaén','Jaén','692098867','asanalh@gmail.com');
+-- INSERT INTO Socios VALUES ('12908456J', 'Manuel', 'Molina', 'González', 'Arquitecto Berges 3', '23003','Jaén','Jaén','682343341','mmolgol@gmail.com');
 
 
 INSERT INTO Entrega_aceituna VALUES ('0001', '2023-10-05 12:30:34', '360', 'Árbol','416','1','12345678V');
