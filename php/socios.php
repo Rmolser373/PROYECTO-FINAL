@@ -10,7 +10,7 @@
   $conn = new mysqli($nombreServidor, $nombreUsuario, $password, $baseDatos);
    
   // Se comprueba que la conexión es correcta
-  .$
+
   if (!$conn) {
     
     die("Connection failed: " . mysqli_connect_error());
@@ -32,7 +32,7 @@
     $telefono = $_POST['telefono'];
     $mail = $_POST['mail'];
 
-    $sentenciaSQL = "INSERT INTO socios VALUES(NULL,'" . $nif . "','" . $nombre . "','" . $Apellido1 . "','" . $Apellido2 .
+    $sentenciaSQL = "INSERT INTO socios VALUES('" . $nif . "','" . $nombre . "','" . $Apellido1 . "','" . $Apellido2 .
      "','" . $tipodevia . $nombrecalle . $numerovivienda . $piso. "','" . $codigopostal . 
      "','".$municipio. "','" .$provincia. "','" .$telefono. "','" .$mail. "')";
     
