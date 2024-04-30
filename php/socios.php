@@ -32,11 +32,11 @@
     $telefono = $_POST['telefono'];
     $mail = $_POST['mail'];
 
-    $sentenciaSQL = "INSERT INTO Localidad VALUES(" . $nif . ",'" . nombre . "')";
+    $sentenciaSQL = "INSERT INTO socios VALUES(NULL,'" .$nif. "','" .$nombre. "','" .$Apellido1. "','" .$Apellido2.
+     "','" .$tipodevia. "','" .$nombrecalle. "','" .$numerovivienda. "','" .$piso. "','" .$codigopostal. 
+     "','".$municipio. "','" .$provincia. "','" .$telefono. "','" .$mail. "')";
     
     echo $sentenciaSQL;
-
-  $sentenciaSQL="INSERT INTO Localidad VALUES(3,'Córdoba')";
  
   if (!$conn->query($sentenciaSQL)) {
       

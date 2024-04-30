@@ -80,19 +80,22 @@ CREATE TABLE Producto_Ventas(
 -- INSERT INTO Socios VALUES ('12908456J', 'Manuel', 'Molina', 'González', 'Arquitecto Berges 3', '23003','Jaén','Jaén','682343341','mmolgol@gmail.com');
 
 
-INSERT INTO Entrega_aceituna VALUES ('0001', '2023-10-05 12:30:34', '360', 'Árbol','416','1','12345678V');
-INSERT INTO Entrega_aceituna VALUES ('0002', '2024-03-02 17:44:12', '1240', 'Suelo', '312','13','49826745H');
-INSERT INTO Entrega_aceituna VALUES ('0003', '2024-04-01 09:00:57', '145', 'Árbol', '89','25','12908456J');
+-- INSERT INTO Entrega_aceituna VALUES ('0001', '2023-10-05 12:30:34', '360', 'Árbol','416','1','12345678V');
+-- INSERT INTO Entrega_aceituna VALUES ('0002', '2024-03-02 17:44:12', '1240', 'Suelo', '312','13','49826745H');
+-- INSERT INTO Entrega_aceituna VALUES ('0003', '2024-04-01 09:00:57', '145', 'Árbol', '89','25','12908456J');
 
 
-INSERT INTO Producto VALUES ('0012', 'Aceite de oliva virgen extra', '11.36');
-INSERT INTO Producto VALUES ('0002', 'Hueso de aceituna', '4.86');
-INSERT INTO Producto VALUES ('0056', 'Aceite de orujo', '4.40');
+INSERT INTO Producto VALUES ('0001', 'Aceite de oliva virgen extra', '11.36');
+INSERT INTO Producto VALUES ('0001', 'Aceite de oliva virgen', '8.90');
+INSERT INTO Producto VALUES ('0003', 'Aceite de orujo', '4.40');
+INSERT INTO Producto VALUES ('0004', 'Hueso de aceituna', '4.86');
 
 
-INSERT INTO Ventas VALUES ('12345678V','0123', '2023-01-05 14:10:02');
-INSERT INTO Ventas VALUES ('49826745H','0256', '2024-02-24 21:21:12');
-INSERT INTO Ventas VALUES ('12908456J','0278', '2024-03-22 11:08:34');
+
+
+-- INSERT INTO Ventas VALUES ('12345678V','0123', '2023-01-05 14:10:02');
+-- INSERT INTO Ventas VALUES ('49826745H','0256', '2024-02-24 21:21:12');
+-- INSERT INTO Ventas VALUES ('12908456J','0278', '2024-03-22 11:08:34');
 
 
 -- fetch
