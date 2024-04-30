@@ -32,8 +32,8 @@
     $telefono = $_POST['telefono'];
     $mail = $_POST['mail'];
 
-    $sentenciaSQL = "INSERT INTO socios VALUES(NULL,'" .$nif. "','" .$nombre. "','" .$Apellido1. "','" .$Apellido2.
-     "','" .$tipodevia. "','" .$nombrecalle. "','" .$numerovivienda. "','" .$piso. "','" .$codigopostal. 
+    $sentenciaSQL = "INSERT INTO socios VALUES(NULL,'" . $nif . "','" . $nombre . "','" . $Apellido1 . "','" . $Apellido2 .
+     "','" . $tipodevia . $nombrecalle . $numerovivienda . $piso. "','" . $codigopostal . 
      "','".$municipio. "','" .$provincia. "','" .$telefono. "','" .$mail. "')";
     
     echo $sentenciaSQL;
