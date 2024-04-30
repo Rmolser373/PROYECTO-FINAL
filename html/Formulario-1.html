@@ -26,7 +26,7 @@
 
         <h1>Formulario de registro</h1>
             <p>Número de socio: <input type="number" name="numerosocio" id="numerosocio" readonly placeholder="Se generará automáticamente"></p>
-            <p>NIF: <input type="text" name="nif" id="nif" length="9" placeholder="* 8 números y letra mayúscula" pattern="[0-9]{8}[A-Z]" required></p>
+            <p>NIF: <input type="text" name="nif" id="nif" placeholder="* 8 números y letra mayúscula" pattern="[0-9]{8}[A-Z]" required></p>
             <p>Nombre: <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="*" required></p>
             <p>Primer apellido: <input type="text" name="Apellido1" id="Apellido1" maxlength="30" placeholder="*" required></p>
             <p>Segundo apellido: <input type="text" name="Apellido2" id="Apellido2" maxlength="30" ></p>
@@ -35,7 +35,7 @@
             <p>Nombre de la calle: <input type="text" name="nombrecalle" id="nombrecalle" maxlength="60" placeholder="*" required></p>
             <p>Número vivienda: <input type="text" name="numerovivienda" id="numerovivienda" maxlength="10" placeholder="*" required></p>
             <p>Piso: <input type="text" name="piso" id="piso" maxlength="30"></p>
-            <p>Código Postal: <input type="number" name="codigopostal" id="codigopostal" minlength="5" max="99999" placeholder="*" required></p>
+            <p>Código Postal: <input type="number" name="codigopostal" id="codigopostal" pattern="[0-9]{5}" placeholder="*" required></p>
             <p>Municipio: <input type="text" name="municipio" id="municipio" maxlength="50" placeholder="*" required></p>
             <p>Provincia: <select required name="provincia" id="provincia" class="form-control">
                 <option value="">* Elige Provincia</option>

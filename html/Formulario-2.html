@@ -23,21 +23,21 @@
 
       <h1>Formulario de Entrega de Aceituna</h1>
       <label for = "numero_entrega"> Número de entrega  </label>
-      <input type="number" id="numero_entrega" name="numero_entrega" class="form-input" readonly maxlength="30"/>
+      <input type="number" id="numero_entrega" name="numero_entrega" readonly placeholder="Se generará automáticamente"/>
       <br><br><br>
       <label for = "datetime"> Fecha y hora: </label>
       <input type = "datetime-local" id = "datetime" name = "datetime" required ></input>
       <br><br><br>
-      <label for = "num_socio"> Número de socio:</label>
-      <input type = "number" id = "num_socio" name = "num_socio" min="1" max="999999" placeholder="*" required ></input>
+      <label for = "NIF_Socio"> NIF del socio:</label>
+      <input type = "text" id = "NIF_Socio" name = "NIF_Socio" placeholder="* 8 números y letra mayúscula" pattern="[0-9]{8}[A-Z]" required ></input>
       <br><br><br>
       <label for = "cant_aceituna"> Cantidad de aceituna (kg):</label>
       <input type = "number" id = "cant_aceituna" name = "cant_aceituna" min="0.1" step="0.1" placeholder="*" required ></input>
       <br><br><br>
       <label for = "tipo_aceituna"> Tipo Aceituna: </label>
-      <select id = "tipo_aceituna" name = "tipo_aceituna">
-           <option value = "árbol"> Árbol </option>
-           <option value = "suelo"> Suelo </option>
+      <select type="text" id = "tipo_aceituna" name = "tipo_aceituna">
+           <option value = "Árbol"> Árbol </option>
+           <option value = "Suelo"> Suelo </option>
       </select>
       <br><br><br>
       <label for = "parcela"> Parcela SIGPAC </label>

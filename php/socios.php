@@ -32,13 +32,13 @@
     $telefono = $_POST['telefono'];
     $mail = $_POST['mail'];
 
-    $sentenciaSQL = "INSERT INTO Socios VALUES('" . $nif . "','" . $nombre . "','" . $Apellido1 . "','" . $Apellido2 .
-     "','" . $tipodevia . $nombrecalle . $numerovivienda . $piso. "','" . $codigopostal . 
+    $SociosSQL = "INSERT INTO Socios VALUES('" .$nif. "','" .$nombre. "','" .$Apellido1. "','" .$Apellido2.
+     "','" .$tipodevia . $nombrecalle . $numerovivienda . $piso. "','" .$codigopostal. 
      "','".$municipio. "','" .$provincia. "','" .$telefono. "','" .$mail. "')";
     
-    echo $sentenciaSQL;
+    echo $SociosSQL;
  
-  if (!$conn->query($sentenciaSQL)) {
+  if (!$conn->query($SociosSQL)) {
       
     echo "Falló la inserción de datos en la tabla: (" . $conn->errno . ") " . $conn->error;
   

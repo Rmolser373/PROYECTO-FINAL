@@ -21,13 +21,13 @@ CREATE TABLE Socios (
 
 
 CREATE TABLE Entrega_aceituna(
- Num_entrega integer AUTO_INCREMENT,
- Fecha_Hora timestamp NOT NULL,
+Num_entrega integer AUTO_INCREMENT,
+Fecha_Hora timestamp NOT NULL,
+NIF_Socio varchar(9),
  Cantidad integer NOT NULL,
- Tipo enum('Arbol','Suelo') NOT NULL,
+ Tipo enum('Árbol','Suelo') NOT NULL,
  Parcela integer,
- Recinto integer,
- NIF_Socio varchar(9),
+ Recinto integer, 
  CONSTRAINT Entrega_aceituna_pk PRIMARY KEY(Num_entrega),
  CONSTRAINT Entrega_NIF_Socio_fk FOREIGN KEY(NIF_Socio)
                              	REFERENCES Socios(NIF_Socio)
@@ -48,9 +48,9 @@ CREATE TABLE Producto (
 
 
 CREATE TABLE Ventas (
- NIF_Socio varchar(9),
  Num_Factura integer AUTO_INCREMENT PRIMARY KEY,
- Fecha_Hora timestamp NOT NULL,
+ NIF_Socio varchar(9),
+  Fecha_Hora timestamp NOT NULL,
  CONSTRAINT Ventas_NS_fk FOREIGN KEY(NIF_Socio)
                              	REFERENCES Socios(NIF_Socio)
                              	ON UPDATE CASCADE
@@ -86,7 +86,7 @@ CREATE TABLE Producto_Ventas(
 
 
 INSERT INTO Producto VALUES ('0001', 'Aceite de oliva virgen extra', '11.36');
-INSERT INTO Producto VALUES ('0001', 'Aceite de oliva virgen', '8.90');
+INSERT INTO Producto VALUES ('0002', 'Aceite de oliva virgen', '8.90');
 INSERT INTO Producto VALUES ('0003', 'Aceite de orujo', '4.40');
 INSERT INTO Producto VALUES ('0004', 'Hueso de aceituna', '4.86');
 
@@ -99,7 +99,7 @@ INSERT INTO Producto VALUES ('0004', 'Hueso de aceituna', '4.86');
 
 
 -- fetch
-SELECT * FROM Socios;
-SELECT * FROM Entrega_aceituna;
-SELECT * FROM Ventas;
-SELECT precio FROM Producto where Cod_Producto='0012';
+-- SELECT * FROM Socios;
+-- SELECT * FROM Entrega_aceituna;
+-- SELECT * FROM Ventas;
+-- SELECT precio FROM Producto where Cod_Producto='0001';

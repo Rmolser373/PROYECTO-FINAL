@@ -4,48 +4,44 @@
   $baseDatos = "BaseChocas";
   $nombreUsuario = "usuario";
   $password = "usuario";
-  
+ 
   // Se crea la conexión
    
   $conn = new mysqli($nombreServidor, $nombreUsuario, $password, $baseDatos);
    
   // Se comprueba que la conexión es correcta
-  .$
+
   if (!$conn) {
-    
+   
     die("Connection failed: " . mysqli_connect_error());
   }
-  
+ 
   echo "Conexión correcta";
 
-    $datetime = $_POST['nif'];
-    $nombre = $_POST['nombre'];
-    $Apellido1 = $_POST['Apellido1'];
-    $Apellido2 = $_POST['Apellido2'];
-    $tipodevia = $_POST['tipodevia'];
-    $nombrecalle = $_POST['nombrecalle'];
-    $numerovivienda = $_POST['numerovivienda'];
-    $piso = $_POST['piso'];
-    $codigopostal = $_POST['codigopostal'];
-    $municipio = $_POST['municipio'];
-    $provincia = $_POST['provincia'];
-    $telefono = $_POST['telefono'];
-    $mail = $_POST['mail'];
+    $datetime = $_POST['datetime'];
+    $NIF_Socio = $_POST['NIF_Socio'];
+    $cant_aceituna = $_POST['cant_aceituna'];
+    $tipo_aceituna = $_POST['tipo_aceituna'];
+    $parcela = $_POST['parcela'];
+    $recinto = $_POST['recinto'];
 
-    $sentenciaSQL = "INSERT INTO Localidad VALUES('" .$nif. "','" .$nombre. "','" .$Apellido1. "','" .$Apellido2.
-     "','" .$tipodevia. "','" .$nombrecalle. "','" .$numerovivienda. "','" .$piso. "','" .$codigopostal. 
-     "','".$municipio. "','" .$provincia. "','" .$telefono. "','" .$mail. "')";
-    
-    echo $sentenciaSQL;
+
+    $EntregaSQL = "INSERT INTO Entrega_aceituna VALUES(NULL,'" .$datetime. "','" .$NIF_Socio. "','" .$cant_aceituna.
+    "','" .$tipo_aceituna. "','" .$parcela. "','" .$recinto. "')";
+   
+    echo $EntregaSQL;
  
-  if (!$conn->query($sentenciaSQL)) {
-      
+  if (!$conn->query($EntregaSQL)) {
+     
     echo "Falló la inserción de datos en la tabla: (" . $conn->errno . ") " . $conn->error;
-  
+ 
+  } else {
+
+
+    echo "Se ha ejecutado correctamente la inserción de datos";
+ 
   }
-    
-  echo "Se ha ejecutado correctamente la inserción de datos";
-  
+   
   mysqli_close($conn);
 
 ?>
