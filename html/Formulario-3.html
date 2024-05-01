@@ -3,9 +3,10 @@
    <head>
         <meta charset="utf-8" />
         <title>Formulario Compra de aceite - Cooperativa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../javascript/compra.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href="../css/styles.css" rel="stylesheet">
-        <form action = "compra.php" method="post">
    </head>
 
    <body>
@@ -21,6 +22,8 @@
                 </div>
               </nav>
             </div>
+
+    <form action = "../php/compra.php" method="post">
 
        <h1>Formulario Compra de aceite - Cooperativa</h1>
        <p>
@@ -39,51 +42,53 @@
            <tr><th>Producto</th><th>Cantidad</th><th>Precio/litro</th><th>Subtotal</th></tr>
            <tr>
                <td><select id="ace1" name="ace1" required>
-                   <option value="0001">Aceite virgen extra</option>
-                   <option value="0002">Aceite virgen</option>
-                   <option value="0003">Aceite de orujo</option>
-                   <option value="0004">Hueso de aceituna</option></select>
+                   <option value="1">Aceite virgen extra</option>
+                   <option value="2">Aceite virgen</option>
+                   <option value="3">Aceite de orujo</option>
+                   <option value="4">Hueso de aceituna</option></select>
                </td>
                <td><input type="number" id="can1" name="can1" min="0.1" step="0.1" maxlength="5" placeholder="*" required/></td>
-               <td><input type="number" id="prel1" name="prel1" min="1" step="0.1" maxlength="5" readonly required/></td>
-               <td><input type="number" id="sub1" name="sub1" min="0.1" step="0.01" maxlength="5" readonly required/></td>
+               <td><span id="prel1"></span></td>
+               <td><span id="sub1"></span></td>
            </tr>
            <tr>
                <td><select id="ace2" name="ace2">
-                    <option value="N">-</option>
-                    <option value="0001">Aceite virgen extra</option>
-                    <option value="0002">Aceite virgen</option>
-                    <option value="0003">Aceite de orujo</option>
-                    <option value="0004">Hueso de aceituna</option></select>
+                    <option value="0">-</option>
+                    <option value="1">Aceite virgen extra</option>
+                    <option value="2">Aceite virgen</option>
+                    <option value="3">Aceite de orujo</option>
+                    <option value="4">Hueso de aceituna</option></select>
                </td>
-               <td><input type="number" id="can2" name="can2" min="0" step="0.1" maxlength="5"/></td>
-               <td><input type="number" id="prel2" name="prel2" min="1" step="0.1" maxlength="5" readonly/></td>
-               <td><input type="number" id="sub2" name="sub2" min="0" step="0.01" maxlength="5" readonly/></td>
+               <td><input type="number" id="can2" name="can2" value="0" min="0" step="0.1" maxlength="5"/></td>
+               <td><span id="prel2"></span></td>
+               <td><span id="sub2"></span></td>
            </tr>
            <tr>
                <td><select id="ace3" name="ace3">
-                    <option value="N">-</option>
-                    <option value="0001">Aceite virgen extra</option>
-                    <option value="0002">Aceite virgen</option>
-                    <option value="0003">Aceite de orujo</option>
-                    <option value="0004">Hueso de aceituna</option></select>
+                    <option value="0">-</option>
+                    <option value="1">Aceite virgen extra</option>
+                    <option value="2">Aceite virgen</option>
+                    <option value="3">Aceite de orujo</option>
+                    <option value="4">Hueso de aceituna</option></select>
                </td>
-               <td><input type="number" id="can3" name="can3" min="0" step="0.1" maxlength="5"/></td>
-               <td><input type="number" id="prel3" name="prel3" min="1" step="0.1" maxlength="5" readonly/></td>
-               <td><input type="number" id="sub3" name="sub3" min="0" step="0.01" maxlength="5" readonly/></td>
+               <td><input type="number" id="can3" name="can3" value="0" min="0" step="0.1" maxlength="5"/></td>
+               <td><span id="prel3"></span></td>
+               <td><span id="sub3"></span></td>
            </tr>
            <tr>
-                <td></td>
-                <td></td>
+                <td colspan="2"></td>
                 <td><label for="total">Total:</label></td>
-                <td><input type="number" id="total" name="total" min="0" maxlength="7" readonly/></td>
+                <td><span id="total"></span></td>
             </tr>
        </table>
         <p>
             <input type="submit" value="Enviar">
         </p>
+    </form>
+        
         <p>
             <a href="index.html">Volver al inicio</a>
         </p>
+
    </body>
 </html>

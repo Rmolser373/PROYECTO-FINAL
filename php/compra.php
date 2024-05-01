@@ -26,7 +26,7 @@
     $can2 = $_POST['can2'];
     $ace3 = $_POST['ace3'];
     $can3 = $_POST['can3'];
-    $Nulo = "N";
+    $Nulo = "0";
 
   $VentasSQL = "INSERT INTO Ventas VALUES(NULL,'" .$Nsoc. "','" .$dattie. "')";
     if (!$conn->query($VentasSQL)) {
@@ -35,6 +35,7 @@
       echo "Se ha ejecutado correctamente la inserción de datos";
       echo $VentasSQL;
       $UltClave = $conn->insert_id;
+      // $UltClave = $conn->key;
     }
 
   $ProVen1SQL = "INSERT INTO Producto_Ventas VALUES(" .$UltClave. ",'" .$ace1. "','" .$can1. "')";

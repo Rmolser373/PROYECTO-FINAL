@@ -24,7 +24,6 @@ h2 {
 }
 
 p {
-
     font-family: 'Times New Roman', Times, serif;
     color: #141211;
     size: 100%;
@@ -34,7 +33,6 @@ p {
 }
 
 label {
-
     font-family: 'Times New Roman', Times, serif;
     color: #141211;
     size: 100%;
@@ -44,22 +42,32 @@ label {
 }
 
 ul {
-
     color:#9b532c;
     font-family: 'Times New Roman', Times, serif;
     list-style-image: url("Lista.png");
 }
 
 table {
-
+    width: 75%;
     size: 100%;
-    text-indent: 15px;
     color:#141211;
-    border:10px;
+    border: 2px solid #141211;
+    box-sizing: content-box;
 }
 
-input {
-    border: 2px solid;
+td{
+    text-align: right;
+    border: 1px solid #141211;
+}
+
+th{
+    text-align: center;
+    background-color: #c5e678;
+    border: 1px solid #141211;
+}
+
+input, select {
+    border: 2px solid #ccc;
     border-radius: 4px;
     padding: 0.5rem;
 }
@@ -68,7 +76,7 @@ input:valid {
     border-color: green;
 }
   
-  input:invalid {
+input:invalid, input:optional:invalid {
     border-color: red;
 }
   
@@ -82,4 +90,9 @@ input:focus:valid {
   
 input:focus:invalid {
     background-color: lightsalmon;
+}
+
+#total {
+    font-weight: bold;
+    font-size: 18px;
 }

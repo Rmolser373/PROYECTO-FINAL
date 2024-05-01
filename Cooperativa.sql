@@ -8,7 +8,7 @@ CREATE TABLE Socios (
  Nombre varchar(20) NOT NULL,
  Ap1 varchar(20) NOT NULL,
  Ap2 varchar(20),
- Dirección varchar(70) NOT NULL,
+ Dirección varchar(300) NOT NULL,
  Cod_P varchar(5) NOT NULL,
  Municipio varchar(30),
  Provincia varchar(30),
@@ -85,10 +85,10 @@ CREATE TABLE Producto_Ventas(
 -- INSERT INTO Entrega_aceituna VALUES ('0003', '2024-04-01 09:00:57', '145', 'Árbol', '89','25','12908456J');
 
 
-INSERT INTO Producto VALUES ('0001', 'Aceite de oliva virgen extra', '11.36');
-INSERT INTO Producto VALUES ('0002', 'Aceite de oliva virgen', '8.90');
-INSERT INTO Producto VALUES ('0003', 'Aceite de orujo', '4.40');
-INSERT INTO Producto VALUES ('0004', 'Hueso de aceituna', '4.86');
+INSERT INTO Producto VALUES ('1', 'Aceite de oliva virgen extra', '11.30');
+INSERT INTO Producto VALUES ('2', 'Aceite de oliva virgen', '8.90');
+INSERT INTO Producto VALUES ('3', 'Aceite de orujo', '5.40');
+INSERT INTO Producto VALUES ('4', 'Hueso de aceituna', '4.50');
 
 
 
