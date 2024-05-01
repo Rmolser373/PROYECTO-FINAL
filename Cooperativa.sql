@@ -1,7 +1,7 @@
 -- create
-DROP DATABASE IF EXISTS BaseChocas;
-CREATE DATABASE BaseChocas;
-use BaseChocas;
+DROP DATABASE IF EXISTS basechocas;
+CREATE DATABASE basechocas;
+use basechocas;
 
 CREATE TABLE Socios (
  NIF_Socio varchar(9) PRIMARY KEY,
