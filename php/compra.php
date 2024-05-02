@@ -1,7 +1,7 @@
 <?php
    
   $nombreServidor = "localhost";
-  $baseDatos = "BaseChocas";
+  $baseDatos = "basechocas";
   $nombreUsuario = "usuario";
   $password = "usuario";
  
@@ -16,7 +16,6 @@
   }
  
   echo "Conexión correcta";
-
 
     $dattie = $_POST['dattie'];
     $Nsoc = $_POST['Nsoc'];
@@ -35,7 +34,6 @@
       echo "Se ha ejecutado correctamente la inserción de datos";
       echo $VentasSQL;
       $UltClave = $conn->insert_id;
-      // $UltClave = $conn->key;
     }
 
   $ProVen1SQL = "INSERT INTO Producto_Ventas VALUES(" .$UltClave. ",'" .$ace1. "','" .$can1. "')";

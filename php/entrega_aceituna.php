@@ -1,7 +1,7 @@
 <?php
    
   $nombreServidor = "localhost";
-  $baseDatos = "BaseChocas";
+  $baseDatos = "basechocas";
   $nombreUsuario = "usuario";
   $password = "usuario";
  
